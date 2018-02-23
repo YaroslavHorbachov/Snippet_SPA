@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <ul class="list-unstyled">
+      <li *ngFor="let data of dataJson" class="media">
+        <img class="mr-3" src="../../assets/logo_post.png" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">{{data.title}} - {{data.description}}</h5>
+          Content - <i>{{data.text}}</i><br>
+          <i>Author -</i> <b>{{data.author}}</b><br>
+           <code>Date post - {{data.date}}</code><br>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

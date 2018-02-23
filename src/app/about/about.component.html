@@ -1,0 +1,43 @@
+<div class="container ">
+  <h2 class="h2">Demo Form: Sku</h2>
+  <form [formGroup]='form'
+        (ngSubmit)="onSubmit(form.valid)"
+        class="form-group">
+    <div class="container">
+      <div class="flex-row">
+        <label for="skuInput" class="col-form-label">SKU</label>
+        <input type="text"
+               id="skuInput"
+               placeholder="SKU"
+               name="sku"
+               [formControl]="form.controls['sku']">
+      </div>
+      <div class="flex-row">
+        <label for="nameInput">Name</label>
+        <input type="text"
+               id="nameInput"
+               placeholder="Name"
+               name="name"
+               [formControl]="form.controls['name']">
+      </div>
+      <div class="flex-row">
+        <label for="SurnameInput">Surname</label>
+        <input type="text"
+               id="SurnameInput"
+               placeholder="Surname"
+               name="Surname"
+               [formControl]="form.controls['surname']">
+      </div>
+      <div class="flex-row">
+        <label for="AgeInput">Surname</label>
+        <input type="number"
+               id="AgeInput"
+               placeholder="Age"
+               name="Age"
+               [formControl]="form.controls['age']">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+  </form>
+</div>
